@@ -1,0 +1,231 @@
+
+
+<header>
+
+<img class="logo"src ="https://www.etsy.com/assets/dist/images/etsylogo.20150203215610.png">
+<div class="barz">
+<input type="text" name="input" value="Type here"class="searchbar">
+<span><button class="sbutton" type="submit" value="Search">Search</button></span>
+</div>
+
+<div class="navss">
+<div id="house"></div>
+
+<div id="heart"></div>
+</div>
+
+</header>
+
+
+<div id="main">
+<div class="sidebar"> 
+  
+  <div class="tops">
+  <h4> Item Type </h4>
+  <ul>
+  
+  <li>
+  <label>
+  <input type ="radio">
+  <span class="item"> All Items </span>
+  </label>
+  <li>
+
+  <li>
+  <label>
+  <input type ="radio">
+  <span class="item"> HandMade </span>
+  </label>
+  <li>
+
+  <li>
+  <label>
+  <input type ="radio">
+  <span class="item"> Vintage </span>
+  </label>
+  <li>
+
+  <li>
+  <label>
+  <input type ="radio">
+  <span class="item"> Craft Supplies </span>
+  </label>
+  <li>
+  </ul>
+</div>
+
+<div class="sidebar_bottom">
+<h4> Categories</h4>
+<ul>
+<li ><span class="heading">Handmade</span></li>
+<li class="next">Toys</li>
+<li class="next">Children</li>
+<li class="next">Dolls and Miniatures</li>
+<li class="next">Crochet</li>
+<li class="next">Housewares</li>
+<li class="next">Patterns</li>
+<li class="next">Accessories</li>
+<li class="next">Holidays</li>
+</ul>
+
+<ul>
+<li ><span class="heading">Vintage</span></li>
+<li class="next">Toy</li>
+<li class="next">Collectibles</li>
+<li class="next">Supplies</li>
+<li class="next">HomeDecor</li>
+</ul>
+
+<ul>
+<li ><span class="heading">Craft Supplies</span></li>
+<li class="next">Pattern</li>
+<li class="next">Commercial</li>
+<li class="next">Handmade</li>
+<li class="next">Fabric</li>
+</ul>
+
+</div>
+
+<div class="filterbox">
+<h4> Price Filter</h4>
+<div class="cell">
+<input  type="tel" step="any" name="min" value placeholder="$min" id="min" class="ty">
+<span> to </span>
+<span> <input  type="tel" step="any" name="min" value placeholder="$max" id="min" class="ty">
+</span>
+
+
+<button type="submit" class="buttons">
+<span>►</span>
+</button>
+</div>
+
+</div>
+
+<div class="colors">
+<h4> Fliter by Color</h4>
+<div class="red">
+</div>
+
+<div class="orange">
+</div>
+
+<div class="yellow">
+</div>
+
+<div class="green">
+</div>
+
+<div class="blue">
+</div>
+
+<div class="violet">
+</div>
+
+<div class="black">
+</div>
+
+<div class="white">
+</div>
+
+<div class="Order Options">
+<h4> Ordering Options</h4>
+<ul class="orders">
+<li>
+<label>
+<input type="checkbox" name="In Your Favorites">
+<span class="txt">In Your Favorites
+</span>
+</label>
+</li>
+
+
+<li>
+<label>
+<input type="checkbox" name="In Your Favorites">
+<span class="txt">Accepts Etsy Gift Cards
+</span>
+</label>
+</li>
+
+
+<li>
+<label>
+<input type="checkbox" name="In Your Favorites">
+<span class="txt">Customizable
+</span>
+</label>
+</li>
+</ul>
+
+</div>
+
+<div class="shop_location">
+<h4>Shop Location</h4>
+<ul class="location">
+<li>
+<lable>
+<input type="radio">
+<span class="txt"> Anywhere</span>
+</lable>
+</li>
+
+<li>
+<lable>
+<input type="radio">
+<span class="txt"> United States </span>
+</lable>
+</li>
+<span class="txt">Choose a custom location</span>
+</ul>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+<div class="content">
+<% @response.each do |response| %>
+
+
+<div class="box">
+<div >
+    <img class="image"src=<%= response["Images"][0]["url_170x135"] %>>
+    </div>
+    <div class="title">
+      <%=response["title"]%>
+    <div class="price">
+      <span>$</span>
+      <span><%=response["price"]%></span>
+      <span>USD</span>
+      </div>
+      </div>
+
+</div>
+
+<%end%>
+
+</div>
+
+</div>
+<div class="footer">
+  <div class="sectionleft">
+  <ul>
+  <li class="next"><h4>Turn Your Passion Into a Business</h4></li>
+  <li><button type="submit" class="buttons">Open a Shop</button></li>
+  </ul>
+<ul>
+<li><h4 >Sell on Ebay</h4>
+</li>
+<li class="next">Seller Handbook</li>
+<li class="next">Etsy Credit Card Reader</li>
+</ul>
+
+</div>
+
+
+
