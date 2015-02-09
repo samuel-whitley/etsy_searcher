@@ -69,14 +69,36 @@ background-color: white;
 }
 
 .navss{
-  position: relative;
-  width:100px;
-
+  position: absolute;
+  left:725px;
+  top:0px;
+  margin: 0 auto;
 }
 
 
+.circle{
+  margin-bottom:0px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:18px;
+  min-width:20px;
+  overflow-x:visible;
+  overflow-y:visible;
+  margin:0;
+  position: relative;
+  text-align: center;
+  text-indent:0px;
+  top:auto;  
+}
 
-
+.circle::after{
+  border-bottom-color:rgb(0,0,0);
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  border-bottom-style:solid;
+  border-bottom-width:1.1111111164px;
+  border-image-outset:0px;
+}
 
 
 #heart {
